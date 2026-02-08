@@ -90,3 +90,48 @@ html, body {
 .text-footer {
     color: white;
 }
+
+.skills-section {
+    max-width: 800px;      /* กำหนดความกว้างตามต้องการ */
+    margin: 10px auto;
+    font-family: 'Sarabun', sans-serif; /* แนะนำฟอนต์ไทย */
+}
+
+.skills-grid {
+    display: flex;         /* จัดเรียงคอลัมน์แนวนอน */
+    justify-content: space-between;
+    padding-top: 0;
+    
+}
+
+.skill-column {
+    flex: 1;               /* แบ่งพื้นที่ให้เท่ากันทั้ง 3 ส่วน */
+}
+
+.skill-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skill-column ul {
+    list-style: none;      /* เอาจุดหน้า list ออกก่อนเพื่อใส่เองแบบในรูป */
+    padding: 0;
+}
+
+.skill-column li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* ใส่จุดสีดำหน้าข้อความ */
+.skill-column li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-weight: bold;
+}
