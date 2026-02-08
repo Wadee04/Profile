@@ -1,0 +1,92 @@
+html, body {
+    background-color: rgb(150, 150, 150);
+    margin: 0;
+    padding: 0;
+}
+.top-header {
+    background-color: rgb(24, 23, 23);
+    padding: 25px;
+}
+.menu-item {
+    font-family: "Lato", sans-serif;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.brand {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.box {
+    background-color: white;
+    padding: 70px;
+    margin: 30px;
+}
+
+.image {
+    width: 100%;
+    box-shadow: 0 4px 8px gray;
+
+}
+
+.images {
+    width: 100%;
+    box-shadow: 0 4px 8px gray;
+}
+
+.text-name {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+.text-fontend {
+    font-family: "Lato", sans-serif;    
+    font-style: normal;
+    text-align: center;
+}
+
+.text-port {
+    font-family: "Lato", sans-serif;    
+    font-style: normal;
+    display: inline-block;
+
+}
+
+.contact {  
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+.button {
+    margin: auto;
+    color: black;
+    background-color: lightgray;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+}
+
+.bottom-footer {
+    background-color:  rgb(24, 23, 23);
+    padding: 20px;
+    text-align: center;
+}
+
+.text-footer {
+    color: white;
+}
