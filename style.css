@@ -1,7 +1,8 @@
-* {
+/* ---------------------------------------------------------------------------------------> index <--------------------------------------------------------------------------------------------*/
+html {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 body {
@@ -63,18 +64,7 @@ body {
     z-index: 2;
     border-radius: 500px
 }
-/* .blob {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    background: #6b86a8;
-    width: 350px;
-    height: 400px;
-    border-radius: 80% 90% 50% 70%;
-    top: 220px;
-    left: -20px;
-    z-index: 1;
-} */
+/* --------------------------------------------------------------------------------------> projects <------------------------------------------------------------------------------------------*/
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -121,4 +111,24 @@ body {
 @keyframes mymove {
   50% {color: rgb(225, 240, 89);}
   50% {color: rgb(156, 204, 243);}
+}
+/* ---------------------------------------------------------------------------------------> aboutme <----------------------------------------------------------------------------------------- */
+.aboutme {
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(55, 61, 82, 1) 52%, rgba(5, 0, 0, 1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    max-width: 800px;
+    margin: 80px auto;
+    border-radius: 50px;
+    box-shadow: rgba(143, 143, 146, 0.644) 0px 7px 29px 0px;
+
+}
+.text-aboutme{
+    text-align: center;
+    padding: 20px;
+}
+.text-aboutme p{
+    line-height: 50px;
 }
