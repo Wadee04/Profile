@@ -1,137 +1,124 @@
-html, body {
-    background-color: rgb(150, 150, 150);
+* {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+}
+body {
+    background-color: #0d0d0d;
+    color: white;
 }
 .top-header {
-    background-color: rgb(24, 23, 23);
+    background-color: #0d0d0d;
     padding: 25px;
 }
-.menu-item {
-    font-family: "Lato", sans-serif;
-    color: white;
-    padding: 10px;
-    display: inline-block;
+.menu-item{
     text-decoration: none;
-}
-
-.brand {
-    font-family: "Lato", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.main-content {
-    max-width: 700px;
-    margin: auto;
-}
-
-.box {
-    background-color: white;
-    padding: 70px;
+    color: white;
     margin: 30px;
 }
-
-.image {
-    width: 100%;
-    box-shadow: 0 4px 8px gray;
-
-}
-
-.images {
-    width: 100%;
-    box-shadow: 0 4px 8px gray;
-}
-
-.text-name {
+.brand {
+    font-size: 30px;
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 900;
     font-style: normal;
-    text-align: center;
 }
-.text-fontend {
-    font-family: "Lato", sans-serif;    
-    font-style: normal;
-    text-align: center;
-}
-
-.text-port {
-    font-family: "Lato", sans-serif;    
-    font-style: normal;
-    display: inline-block;
-
-}
-
-.contact {  
-    line-height: 1.5;
+.screen {
+    height: 100vh;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-family: "Lato", sans-serif;
-}
-
-.button {
-    margin: auto;
-    color: black;
-    background-color: lightgray;
-    padding: 10px;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px gray;
-}
-
-.bottom-footer {
-    background-color:  rgb(24, 23, 23);
-    padding: 20px;
-    text-align: center;
-}
-
-.text-footer {
-    color: white;
-}
-
-.skills-section {
-    max-width: 800px;      /* กำหนดความกว้างตามต้องการ */
-    margin: 10px auto;
-    font-family: 'Sarabun', sans-serif; /* แนะนำฟอนต์ไทย */
-}
-
-.skills-grid {
-    display: flex;         /* จัดเรียงคอลัมน์แนวนอน */
     justify-content: space-between;
-    padding-top: 0;
-    
+    padding: 0 10%;
 }
-
-.skill-column {
-    flex: 1;               /* แบ่งพื้นที่ให้เท่ากันทั้ง 3 ส่วน */
+.text-left h1{
+    font-size: 50px;
 }
-
-.skill-column h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #333;
+.text-left span{
+    color: #f8c0ec;
 }
-
-.skill-column ul {
-    list-style: none;      /* เอาจุดหน้า list ออกก่อนเพื่อใส่เองแบบในรูป */
-    padding: 0;
+.text-left h3{
+    margin: 10px 0;
+    color: #aaa;
 }
-
-.skill-column li {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 8px;
+.social a{
+    margin-right: 30px;
+    color: #f8c0ec;
+    text-decoration: none;
     position: relative;
-    padding-left: 20px;
+    top: 20px;
 }
-
-/* ใส่จุดสีดำหน้าข้อความ */
-.skill-column li::before {
-    content: "•";
+.image {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 350px;
+    top: 60px;
+    right: 60px;    
+}
+.image img {
+    width: 1000px;
+    position: relative;
+    right: 50px;
+    top: -110px;
+    z-index: 2;
+    border-radius: 500px
+}
+/* .blob {
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
-    left: 0;
-    color: #000;
-    font-weight: bold;
+    background: #6b86a8;
+    width: 350px;
+    height: 400px;
+    border-radius: 80% 90% 50% 70%;
+    top: 220px;
+    left: -20px;
+    z-index: 1;
+} */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 300px;
+    max-width: 1500px;
+    margin: 200px auto;
+}
+.card {
+    text-align: center;
+    line-height: 4;
+}
+.card img{
+    transform: scale(1.7);
+    max-width: 350px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow:inset 0 -3em 3em rgba(209, 142, 203, 0.3), 0 0 0 2px white, 0.3em 0.3em 1em rgba(108, 156, 230, 0.6);
+}
+.card h3{
+    position: relative;
+    top: 100px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 217, 47);
+}
+.card p{
+    position: relative;
+    top: 90px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+}
+.work {
+    max-width: 700px;
+    margin: 100px auto;
+}
+.fontwork {
+    font-size: 40px;
+    color: pink;
+    animation: mymove 5s infinite
+}
+@keyframes mymove {
+  50% {color: rgb(225, 240, 89);}
+  50% {color: rgb(156, 204, 243);}
 }
