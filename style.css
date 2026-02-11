@@ -25,7 +25,7 @@ body {
     font-style: normal;
 }
 .screen {
-    height: 100vh;
+    height:80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,13 +53,16 @@ body {
     justify-content: flex-end;
     position: relative;
     width: 350px;
-    top: 60px;
+    top: 100px;
     right: 60px;    
+    flex-wrap: wrap;
 }
 .image img {
-    width: 1000px;
+    width: 250px;
+    height: auto;
+    max-width: 100%;
     position: relative;
-    right: 50px;
+    right: 60px;
     top: -110px;
     z-index: 2;
     border-radius: 500px
