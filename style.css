@@ -71,7 +71,7 @@ body {
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
+    gap: 40px;
     max-width: 1200px;
     /* margin: 200px auto; */
     position: relative;
