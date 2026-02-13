@@ -140,12 +140,13 @@ body {
     line-height: 50px;
 }
 @media (max-width:768px){
-  .hero{
+  .navbar{
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
 
-  .image{
-    margin-top:30px;
+  .navbar nav{
+    margin-top:10px;
+    flex-wrap: wrap;
   }
 }
