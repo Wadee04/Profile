@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------------------------------------> index <--------------------------------------------------------------------------------------------*/
-html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,11 +25,11 @@ body {
     font-style: normal;
 }
 .screen {
-    height:80vh;
-    display: flex;
-    align-items: center;
+    display:flex;
     justify-content: space-between;
-    padding: 0 10%;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
 }
 .text-left h1{
     font-size: 50px;
