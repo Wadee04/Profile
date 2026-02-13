@@ -72,15 +72,18 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 300px;
-    max-width: 1500px;
+    max-width: 400px;
     margin: 200px auto;
+    position: relative;
+    right: 350px;
 }
 .card {
     text-align: center;
     line-height: 4;
 }
 .card img{
-    transform: scale(1.7);
+    position: relative;
+    transform: scale(1.5);
     max-width: 350px;
     border-radius: 12px;
     padding: 20px;
