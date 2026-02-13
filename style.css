@@ -138,3 +138,13 @@ body {
 .text-aboutme p{
     line-height: 50px;
 }
+@media (max-width:768px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image{
+    margin-top:30px;
+  }
+}
